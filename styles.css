@@ -148,6 +148,43 @@ h1 {
     color: #333;
 }
 
+.icon-container, .input-container, .button-container {
+    display: inline-block;
+    border: 1px solid #F2F2F2;
+    height: 49px;
+}
+
+.icon-container {
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    line-height: 49px;
+}
+
+.input-container {
+    height: 49px;
+    line-height: 49px;
+    width: 195px;
+}
+
+.button-container {
+    height: 49px;
+    width: 132px;
+    line-height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+}
+
+input[type="text"] {
+    width: 195px;
+    border: none;
+    outline: none;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 49px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 
