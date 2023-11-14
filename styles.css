@@ -111,6 +111,7 @@ h1 {
 h4 {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 40px;
 }
 
 h4 i {
@@ -120,12 +121,9 @@ h4 i {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 18px;
-    margin-left: 10px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 3px;
 }
 
 .headline {
@@ -138,7 +136,7 @@ h4 i {
 .filter-box {
     display: flex;
     gap: 15px;
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .filter-heading {
@@ -172,44 +170,60 @@ h4 i {
 
 .icon-container, .input-container, .button-container {
     display: inline-block;
-    border: 1px solid #F2F2F2;
     height: 49px;
+    margin: 0;
 }
 
 .icon-container {
-    width: 3%;
+    width: 50px;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     line-height: 49px;
+    border-top: 1px solid #F2F2F2;
+    border-left: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.icon-container i {
+    margin-left: 20px;
 }
 
 .input-container {
     height: 49px;
     line-height: 49px;
-    width: 12%;
+    width: 195px;
 }
 
 .button-container {
     height: 49px;
-    width: 10%;
+    width: 132px;
     line-height: 49px;
     border-radius: 0px 15px 15px 0px;
+    border-top: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     background-color: #0065FC;
+    color: #fff;
+    text-align: center;
 }
 
 input[type="text"] {
-    width: 12%;
-    border: none;
+    width: 100%;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
     outline: none;
     height: 49px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 49px;
+    line-height: 47px;
 }
 
 .form-container {
     margin-top: 50px;
 }
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -226,7 +240,10 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+
+
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
@@ -351,7 +368,7 @@ input[type="text"] {
 .Activites {
     padding: 30px;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .activity-cards {
@@ -387,7 +404,6 @@ input[type="text"] {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin: 0;
 }
 
 .activity-cards p {
@@ -397,6 +413,54 @@ input[type="text"] {
     font-weight: 700;
     text-align: left;
 }
+
+/****** Footer ******/
+
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    min-height: 163px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    margin-top: 60px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+.About {
+    width: 33.333%;
+}
+
+.hebergements-footer {
+    width: 33.333%;
+}
+
+.Help {
+    width: 33.333%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
