@@ -1,5 +1,7 @@
-/****** General ***********/
-* {
+    /***** General *****/
+
+
+ * {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -9,14 +11,26 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
+header {
+    margin: 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 79px;
+    margin-bottom: 20px;
 }
 
 body {
     margin: 0;
     display: flex;
     justify-content: center;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
 }
 
 .main-container {
@@ -55,15 +69,9 @@ a {
     font-weight: 700;
 }
 
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
-/****** Header ******/
+    /***** Header *****/
 
-header {
-    width: 1440px;
-}
 
 .Logo-Booki {
     padding: 30px 50px;
@@ -79,33 +87,46 @@ nav {
 }
 
 nav a {
+    display: inline-block;
     padding: 0px 50px 0px 50px;
     margin-right: 68px;
     position: relative;
+    color: #000;
 }
 
 nav a::before {
-    content:"";
+    content: "";
     position: absolute;
-    top: -25px;
-    width: 60%;
-    height: 0;
-    border-top: 2px solid transparent;
-    transition: height 0.3s, color 0.3s;
+    top: -30px;
+    left: 50px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s, background-color 0.3s;
 }
 
 nav a:hover::before {
-    height: 2px;
-    border-top: 2px solid #0065FC;
+    width: calc(100% - 2 * 50px);
+    background-color: #0065FC;
 }
 
 nav a:hover {
     color: #0065FC;
 }
 
+
+    /***** Body *****/
+
+
+h1, h4 {
+    margin: 0;
+}
+
 h1 {
     font-size: 22px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -131,12 +152,12 @@ h4 i {
     gap: 8px;
 }
 
-/****** Body ******/
-
 .filter-box {
     display: flex;
+    align-items: center;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .filter-heading {
@@ -144,9 +165,11 @@ h4 i {
     font-weight: 700;
     line-height: 50px;
 }
+
 .filter-link {
-    display: inline-block;
-    padding: 4px 19px 4px 19px;
+    display: flex;
+    align-items: center;
+    padding: 4px 19px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     background-color: #fff;
@@ -160,7 +183,10 @@ h4 i {
 }
 
 .filter-link i {
-    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    margin-top: 4px;
 }
 
 .filter-link:hover {
@@ -225,27 +251,24 @@ input[type="text"] {
 }
 
 
+    /***** Hebergements And Populaires *****/
 
-/****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
+    /***** Hebergements *****/
 
-
-/****** Hebergements ***********/
 
 .hebergements {
+    background-color: var(--main-bg-color);
     width: 65%;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .hebergements-title {
@@ -267,6 +290,8 @@ input[type="text"] {
     margin-top: 33px;
     width: 240px;
     transition: transform 0.3s;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .hebergements-cards .card:hover {
@@ -312,9 +337,16 @@ input[type="text"] {
     text-decoration: none;
 }
 
-/****** Populaires ***********/
+
+    /***** Populaires *****/
+
+
 .populaires {
+    background-color: var(--main-bg-color);
     width: 32%;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
@@ -327,6 +359,8 @@ input[type="text"] {
     display: flex;
     margin-top: 33px;
     transition: transform 0.3s;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .populaires-cards .card:hover {
@@ -363,7 +397,8 @@ input[type="text"] {
 }
 
 
-/****** Activités ******/
+    /***** Activités *****/
+
 
 .Activites {
     padding: 30px;
@@ -414,10 +449,13 @@ input[type="text"] {
     text-align: left;
 }
 
-/****** Footer ******/
+
+    /***** Footer *****/
+
 
 footer {
     width: 100%;
+    max-width: 1440px;
     background-color: #F2F2F2;
     min-height: 163px;
     display: flex;
@@ -438,15 +476,7 @@ footer h3 {
     line-height: 21.13px;
 }
 
-.About {
-    width: 33.333%;
-}
-
-.hebergements-footer {
-    width: 33.333%;
-}
-
-.Help {
+.About, .hebergements-footer, .Help {
     width: 33.333%;
 }
 
@@ -461,21 +491,18 @@ ul li {
 }
 
 
+        /***** Media queries *****/
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+    /***** Medium devices (tablets, less/equal than 1024px) *****/
+
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
+    .hebergements, .populaires {
         width: 100%;
         margin-top: 50px;
     }
@@ -499,7 +526,10 @@ ul li {
     }
 }
 
-/* Small devices (phones, less than 768px) */
+
+    /***** Small devices (phones, less than 768px) *****/
+
+
 @media (max-width: 767.98px) {
     /* ... */
 }
