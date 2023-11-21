@@ -91,7 +91,6 @@ nav {
 nav a {
     display: inline-block;
     padding: 0px 50px 0px 50px;
-    margin-right: 68px;
     position: relative;
     color: #000;
 }
@@ -165,7 +164,7 @@ h4 i {
 .filter-heading {
     font-size: 18px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 35px;
 }
 
 .filter-link {
@@ -194,6 +193,11 @@ h4 i {
 .filter-link:hover {
     background-color: #DEEBFF;
     color: #333;
+}
+
+.filter {
+    display: flex;
+    gap: 15px;
 }
 
 .icon-container, .input-container, .button-container {
@@ -250,7 +254,7 @@ input[type="text"] {
 }
 
 .form-container {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 
@@ -563,32 +567,59 @@ ul li {
 @media (max-width: 767.98px) {
     header {
         height: 115px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
         margin-bottom: 50px;
     }
     
     .Logo-Booki {
         margin-bottom: 10px;
+        padding-left: 45px;
     }
     
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     nav a {
-        height: 19px;
-        width: 187.5px;
-        margin: 0;
+        width: 50%;
         padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
     }
 
+    nav a::before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background-color: gray;
+        transition: width 0.3s, background-color 0.3s;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+        background-color: #0065FC;
+    }
+
+    .headline {
+        height: 79px;
+    }
+    
+    .form-container{
+        margin-top: 10px;
+    }
     .button-container {
         height: 49px;
         width: 49px;
@@ -597,6 +628,82 @@ ul li {
 
     .input-container {
         width: 234px;
+    }
+
+    .filter-heading {
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .filter-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .filter {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .filter a {
+        flex-basis: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h4 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires {
+        flex-direction: column;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .hebergements {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .hebergements-cards .card {
+        width: 100%;
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    .activity-cards {
+        flex-direction: column;
+    }
+
+    .activity-cards .card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
     
