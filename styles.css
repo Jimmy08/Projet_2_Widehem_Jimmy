@@ -666,6 +666,10 @@ ul li {
 
     .populaires {
         flex-direction: column;
+        width: calc(100% + 100px);
+        margin-left: -50px;
+        border-radius: 0;
+        padding: 50px 80px;
     }
 
     .populaires-cards {
@@ -679,6 +683,11 @@ ul li {
     .hebergements {
         flex-direction: column;
         background-color: white;
+        padding: 0 30px;
+    }
+
+    .hebergements-cards img {
+        object-position: 50% 65%;
     }
 
     .hebergements-cards .card {
