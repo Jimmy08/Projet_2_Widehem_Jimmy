@@ -202,7 +202,6 @@ h4 i {
 }
 
 .form-container {
-    margin-top: 35px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -232,13 +231,10 @@ form {
 
 .input-container  input {
     height: 49px;
-    width: 198px;
     border: 1px solid #F2F2F2;
     font-weight: 700;
-    font-size: 18px;
     text-align: center;
     box-sizing: border-box;
-
 }
 
 .text-button input {
@@ -638,18 +634,6 @@ ul li {
     nav a:hover::before {
         width: 100%;
         background-color: #0065FC;
-    }
-
-    .headline {
-        height: 79px;
-    }
-    
-    .form-container{
-        margin-top: 10px;
-    }
-
-    .input-container input {
-        width: 236px;
     }
 
     .text-button {
