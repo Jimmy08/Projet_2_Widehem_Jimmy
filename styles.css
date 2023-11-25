@@ -201,81 +201,81 @@ h4 i {
     gap: 15px;
 }
 
-.form-container {
+.search {
+    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-form {
-    display: flex;
-    flex-direction:row;
-}
-
-.icon-container {
+  }
+  
+  .icon {
     width: 50px;
-    height: 49px;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    background-color: #F2F2F2;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    
-}
-
-.icon-container i {
-    color: #000;
-}
-
-.input-container  input {
-    height: 49px;
-    border: 1px solid #F2F2F2;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.text-button input {
-    display: block;
-    height: 49px;
-    width: 134px;
-    border: 1px solid #0065FC;
-    border-radius: 0 15px 15px 0;
-    background: #0065FC;
-    font-weight: 700;
-    font-size: 18px;
     color: #fff;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 0;
-    border: none;
-    background-color: #fff;
-}
-
-.submit-button {
+    border-radius: 15px 0 0 15px;
+  }
+  
+  .icon i {
+    color: black;
+  }
+  .search-term {
+    width: 50%;
+    border: 1px solid #f2f2f2;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .search-term:focus{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .icon-button {
     display: none;
-    width: 134px;
-    height: 47px;
-}
-
-.submit-button i {
-    display: none;
+    width: 50px;
+    height: 52px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    color: #fff;
+    border-radius: 15px;
+    margin-left: -10px;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    width: 134px;
-    height: 47px;
+  }
+  
+  .text-button {
+    display: flex;
+    height: 52px;
     border: 1px solid #0065FC;
-    border-radius: 0 15px 15px 0;
     background: #0065FC;
-}
-
+    text-align: center;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .search-container {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+  }
 
     /***** Hebergements And Populaires *****/
 
@@ -640,20 +640,12 @@ ul li {
         display: none;
     }
 
-    .submit-button {
-        display: block;
-        width: 48px;
-        height: 47px;
-        border-radius: 15px;
-        margin-left: 0px;
+    .icon-button {
+        display: flex;
     }
 
-    .submit-button i {
-        display: flex;
-        width: 49px;
-        height: 47px;
-        border-radius: 15px;
-        margin-left: -10px;
+    .search-container {
+        width: 100%;
     }
 
     .filter-heading {
