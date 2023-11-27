@@ -25,6 +25,10 @@ body {
     justify-content: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -109,11 +113,11 @@ nav a::before {
 
 nav a:hover::before {
     width: calc(100% - 2 * 50px);
-    background-color: #0065FC;
+    background-color: var(--main-color);
 }
 
 nav a:hover {
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 
@@ -192,7 +196,7 @@ h4 i {
 }
 
 .filter-link:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
     color: #333;
 }
 
@@ -210,8 +214,8 @@ h4 i {
   .icon {
     width: 50px;
     height: 50px;
-    border: 1px solid #f2f2f2;
-    background: #f2f2f2;
+    border: 1px solid var(--main-bg-color);
+    background: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,13 +228,13 @@ h4 i {
   }
   .search-term {
     width: 50%;
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--main-bg-color);
     border-right: none;
     border-left: none;
     padding: 5px;
     height: 40px;
     outline: none;
-    color: #9DBFAF;
+    color: black;
     font-size: 18px;
     font-weight: 700;
   }
@@ -245,8 +249,8 @@ h4 i {
     display: none;
     width: 50px;
     height: 52px;
-    border: 1px solid #0065FC;
-    background: #0065FC;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     color: #fff;
     border-radius: 15px;
     margin-left: -10px;
@@ -258,8 +262,8 @@ h4 i {
   .text-button {
     display: flex;
     height: 52px;
-    border: 1px solid #0065FC;
-    background: #0065FC;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     text-align: center;
     color: #fff;
     border-radius: 0 15px 15px 0;
@@ -484,7 +488,7 @@ h4 i {
 footer {
     width: 100%;
     max-width: 1440px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     min-height: 163px;
     display: flex;
     flex-wrap: wrap;
