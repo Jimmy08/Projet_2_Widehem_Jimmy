@@ -664,6 +664,14 @@ ul li {
         display: flex;
     }
 
+    form {
+        width: 100%;
+    }
+
+    .search-term {
+        width: 80%;
+    }
+
     .search-container {
         width: 100%;
     }
