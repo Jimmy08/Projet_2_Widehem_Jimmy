@@ -137,19 +137,6 @@ h1 {
 h4 {
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 40px;
-}
-
-h4 i {
-    margin-right: 10px;
-    margin-left: 10px;
-    border: 1px solid #D9D9D9;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    padding-top: 3px;
 }
 
 .headline {
@@ -278,6 +265,24 @@ h4 i {
     width: 100%;
     display: flex;
     margin-top: 20px;
+  }
+
+  .infoline {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .infoline i {
+    min-height: 24px;
+    min-width: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
     /***** Hebergements And Populaires *****/
@@ -475,12 +480,14 @@ h4 i {
 
 .activity-cards p {
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
+    height: 59px;
     font-size: 18px;
     font-weight: 700;
     text-align: left;
     margin-left: 20px;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -597,6 +604,10 @@ ul li {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 0;
+    }
+
+    .infoline {
+        margin-bottom: 0;
     }
 }
 
